@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-# Detects if iTerm2 is running
-if ! pgrep -f "iTerm" > /dev/null 2>&1; then
-    open -a "/Applications/iTerm.app"
+# Detects if Ghostty is running
+if ! pgrep -f "Ghostty" > /dev/null 2>&1; then
+    open -a "/Applications/Ghostty.app"
 else
     # Create a new window
-    script='tell application "iTerm2" to create window with default profile'
+    script='tell application "Ghostty" to new terminal'
     ! osascript -e "${script}" > /dev/null 2>&1 && {
-        # Get pids for any app with "iTerm" and kill
+        # Get pids for any app with "Ghostty" and kill
         while IFS="" read -r pid; do
             kill -15 "${pid}"
-        done < <(pgrep -f "iTerm")
-        open -a "/Applications/iTerm.app"
+        done < <(pgrep -f "Ghostty")
+        open -a "/Applications/Ghostty.app"
     }
 fi
