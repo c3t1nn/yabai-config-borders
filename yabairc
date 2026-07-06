@@ -85,7 +85,7 @@ yabai -m signal --add event=window_destroyed action="${ubersicht_spaces_refresh_
 yabai -m signal --add event=window_focused action="${ubersicht_spaces_refresh_command}"
 yabai -m signal --add event=window_title_changed action="${ubersicht_spaces_refresh_command}"
 
-borders active_color=0xffdfe3e8 inactive_color=0xff41424c width=5.0 &
+borders active_color=0xff8c8c8c inactive_color=0xff8c8c8c width=5.0 &
 
 set +x
 printf "yabai: configuration loaded...\\n"
