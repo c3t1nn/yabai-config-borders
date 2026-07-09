@@ -82,7 +82,7 @@ yabai -m signal --add event=window_title_changed action="${ubersicht_spaces_refr
 
 # ===== JankyBorders ===========================
 
-borders active_color=0xff8c8c8c inactive_color=0xff8c8c8c width=5.0 &
+borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 &
 
 set +x
 printf "yabai: configuration loaded...\n"
