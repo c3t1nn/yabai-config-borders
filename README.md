@@ -13,12 +13,12 @@ NOTE: For macOS Big Sur and above, scripting additions needs elevated privileges
 
 ```sh
 # Remove previous links
-$ rm -f "${HOME}"/.{yabai,skhd}rc
+ rm -f "${HOME}"/.{yabai,skhd}rc
 
 # Install configs
-$ git clone https://github.com/c3t1nn/yabai-config-borders.git "${HOME}"/.config/yabai
-$ ln -s "${HOME}/.config/yabai/yabairc" "${HOME}/.yabairc"
-$ ln -s "${HOME}/.config/yabai/skhdrc" "${HOME}/.skhdrc"
+ git clone https://github.com/c3t1nn/yabai-config-borders.git "${HOME}"/.config/yabai
+ ln -s "${HOME}/.config/yabai/yabairc" "${HOME}/.yabairc"
+ ln -s "${HOME}/.config/yabai/skhdrc" "${HOME}/.skhdrc"
 ```
 
 ## Keyboard Shortcuts
