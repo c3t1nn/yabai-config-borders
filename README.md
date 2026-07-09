@@ -1,6 +1,6 @@
-# Yabai and Skhd Config
+# Yabai,Skhd and JankyBorders Config
 
-This repository contains my standalone Yabai and Skhd configurations.
+This repository contains my standalone Yabai,Skhd and JankyBorders configurations.
 
 See my [dotfiles](https://gitlab.com/julian-heng/dotfiles.git) repository for my other configurations.
 
