@@ -12,13 +12,16 @@ NOTE: For macOS Big Sur and above, scripting additions needs elevated privileges
 ## Installation
 
 ```sh
-# Remove previous links
- rm -f "${HOME}"/.{yabai,skhd}rc
+# Remove previous links and configs
+ rm -rf "${HOME}"/.config && rm -f "${HOME}"/.{yabai,skhd}rc
 
 # Install configs
  git clone https://github.com/c3t1nn/yabai-config-borders.git "${HOME}"/.config/yabai
  ln -s "${HOME}/.config/yabai/yabairc" "${HOME}/.yabairc"
  ln -s "${HOME}/.config/yabai/skhdrc" "${HOME}/.skhdrc"
+ yabai --start-service
+ skhd --start-service
+
 ```
 
 ## Keyboard Shortcuts
